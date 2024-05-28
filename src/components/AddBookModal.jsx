@@ -11,8 +11,8 @@ const AddBookModal = ({ addBook, onClose, open }) => {
   useEffect(() => {
     const latinSlug = transliterate(title, {
       replace: {
-        ' ': '-', // Замінити пробіли на дефіси
-        '/[^A-Za-z0-9\-]/g': '', // Видалити всі символи, крім літер, цифр і дефісів
+        ' ': '-', 
+        '/[^A-Za-z0-9\-]/g': '', 
       },
       lowercase: true,
     });
